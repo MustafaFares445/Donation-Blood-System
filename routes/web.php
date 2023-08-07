@@ -25,3 +25,5 @@ Route::resource('/home' , \App\Http\Controllers\HomeController::class);
 Route::resource('/user' , \App\Http\Controllers\UserController::class);
 Route::resource('/donation' , \App\Http\Controllers\BloodDonationController::class);
 Route::resource('/donor' , \App\Http\Controllers\DonorsController::class);
+Route::get('/request_donation/{request_donation}/approve' , [\App\Http\Controllers\RequestDonationController::class , 'approve'])->name('request_donation.approve')
+Route::resource('/request_donation' , \App\Http\Controllers\RequestDonationController::class);
