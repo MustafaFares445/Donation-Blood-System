@@ -23,3 +23,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/home' , \App\Http\Controllers\HomeController::class);
 Route::resource('/user' , \App\Http\Controllers\UserController::class);
+Route::resource('/donation' , \App\Http\Controllers\BloodDonationController::class);
+Route::resource('/donor' , \App\Http\Controllers\DonorsController::class);
